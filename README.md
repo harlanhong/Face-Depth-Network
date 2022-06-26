@@ -64,12 +64,12 @@ python test_simple.py --image_path assets/test_image.jpg --model_name tmp/You_Mo
 
 ### Datasets
  
-1) **VoxCeleb**. Please follow the instruction from https://github.com/AliaksandrSiarohin/video-preprocessing.
+1) **Splits**. The train/test/validation splits are upload on the [One drive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/fhongac_connect_ust_hk/Eq3AeGskIzlBnb6qiAsrGPoBM0Euv5yX9k3dtanIRgatcg?e=8gsxdr)
 
 ### Train on VoxCeleb
 To train a model on specific dataset run:
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py --batch_size 2  --heigh 256 --width 256 --dataset vox  --sample_num 100000 --model_name taking_head_10w --data_path vox2
+CUDA_VISIBLE_DEVICES=0 python train.py --batch_size 32  --heigh 256 --width 256 --dataset vox  --sample_num 100000 --model_name taking_head_10w --data_path vox2
 
 ```
 

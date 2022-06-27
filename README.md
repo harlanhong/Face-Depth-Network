@@ -59,7 +59,7 @@ To run a demo, download checkpoint and run the following command to predict scal
 python test_simple.py --image_path assets/test_image.jpg --model_name tmp/You_Model/models/weights_19
 ```
 
-## :computer: Training
+## ⏳ Training
 
 
 ### Datasets
@@ -76,18 +76,6 @@ CUDA_VISIBLE_DEVICES=0 python train.py --batch_size 32  --heigh 256 --width 256 
 
 ### Training on your own dataset
 You can train on a custom monocular or stereo dataset by writing a new dataloader class which inherits from `MonoDataset` – see the `CELEBDataset` class in `datasets/celeb_dataset.py` for an example.
-
-
-## ⏳ Training
-
-By default models and tensorboard event files are saved to `~/tmp/<model_name>`.
-This can be changed with the `--log_dir` flag.
-
-**Monocular training:**
-```shell
-CUDA_VISIBLE_DEVICES=1 python train.py --model_name mono_model_in --png --batch_size 12
-```
-
 
 
 ## :scroll: Acknowledgement
